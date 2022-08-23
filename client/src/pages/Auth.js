@@ -21,7 +21,7 @@ const Auth = () => {
             {isLogin ? (
               <div>
                 Не зарегистрированны?{' '}
-                <NavLink to={REGISTRATION_ROUTE}>Зарегистрируйтесь!</NavLink>
+                <NavLink to={REGISTRATION_ROUTE}>Зарегистрируйся!</NavLink>
               </div>
             ) : (
               <div>
