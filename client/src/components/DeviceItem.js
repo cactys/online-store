@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Col, Image } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
-import star from '../assets/star.png';
+import star from '../assets/star.svg';
 import { DEVICE_ROUTE } from '../utils/consts';
 
 const DeviceItem = ({ device }) => {
@@ -20,7 +20,7 @@ const DeviceItem = ({ device }) => {
           <div>{device.price}</div>
           <div className="d-flex align-items-center">
             <div>{device.rating}</div>
-            <Image width={12} height={12} src={star} className="ms-1" />
+            <Image width={15} height={15} src={star} className="ms-1" />
           </div>
         </div>
         <div>{device.name}</div>
