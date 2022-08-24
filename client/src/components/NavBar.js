@@ -11,7 +11,7 @@ import { observer } from 'mobx-react-lite';
 const NavBar = observer(() => {
   const { user } = useContext(Context);
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar bg="primary" variant="primary">
       <Container>
         <NavLink style={{ color: 'white', textDecoration: 'none' }} to={SHOP_ROUTE}>
           купиДевайс

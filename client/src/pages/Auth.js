@@ -17,7 +17,7 @@ const Auth = () => {
         <Form className="d-flex flex-column">
           <Form.Control className="mt-2" placeholder="Введите email..." />
           <Form.Control className="mt-2" placeholder="Введите пароль..." />
-          <div className="d-flex flex-row justify-content-between mt-3 pl-3 pr-3">
+          <Row md='auto' className="d-flex flex-row justify-content-between mt-3 pl-3 pr-3">
             {isLogin ? (
               <div>
                 Не зарегистрированны?{' '}
@@ -30,7 +30,7 @@ const Auth = () => {
               </div>
             )}
             <Button variant="outline-success">{isLogin ? 'Войти' : 'Регистрация'}</Button>
-          </div>
+          </Row>
         </Form>
       </Card>
     </Container>
