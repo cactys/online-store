@@ -15,7 +15,7 @@ const DeviceItem = ({ device }) => {
     >
       <Card style={{ width: 150, cursor: 'pointer' }} border={'light'}>
         {/* <Card.Header>{device.name}</Card.Header> */}
-        <Image width={150} height={150} src={device.img} />
+        <Image width={150} height={150} src={device.img} className='img-fluid' />
         <div className="text-black-50 mt-2 d-flex justify-content-between align-items-center">
           <div>{device.price}</div>
           <div className="d-flex align-items-center">
