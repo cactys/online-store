@@ -10,17 +10,24 @@ const DevicePage = () => {
     rating: 2,
     img: 'https://proinside.net/wa-data/public/shop/img/iphone-12-pro-blue-10.jpg',
   };
+  const description = [
+    { id: 1, title: 'Оперативная память', description: '5 гб' },
+    { id: 2, title: 'Камера', description: '12 мп' },
+    { id: 3, title: 'Процессор', description: 'Пентиум 3' },
+    { id: 4, title: 'Кол-во ядер', description: '2' },
+    { id: 5, title: 'Аккумулятор', description: '4000' },
+  ];
   return (
-    <Container className="mt-2">
+    <Container className='mt-2'>
       <Row>
         <Col md={4}>
-          <Image width={300} height={300} src={device.img} className="img-fluid" />
+          <Image width={300} height={300} src={device.img} className='img-fluid' />
         </Col>
         <Col md={4}>
-          <Row className="d-flex flex-column align-items-center">
+          <Row className='d-flex flex-column align-items-center'>
             <h2>{device.name}</h2>
             <div
-              className="d-flex align-items-center justify-content-center"
+              className='d-flex align-items-center justify-content-center'
               style={{
                 background: `url(${bigStar}) no-repeat center center`,
                 width: 240,
@@ -35,7 +42,7 @@ const DevicePage = () => {
         </Col>
         <Col md={4}>
           <Card
-            className="d-flex flex-column aligh-items-center justify-content-around"
+            className='d-flex flex-column aligh-items-center justify-content-around'
             style={{
               width: 300,
               height: 300,
@@ -47,6 +54,22 @@ const DevicePage = () => {
             <Button variant={'outline-dark'}>Добавить в корзину</Button>
           </Card>
         </Col>
+      </Row>
+      <Row className='d-flex flex-column m-3'>
+        <h1>Характеристики</h1>
+        {description.map((info, index) => {
+          return (
+            <Row
+              key={info.id}
+              style={{
+                background: index % 2 === 0 ? 'lightgray' : 'transparent',
+                padding: 10,
+              }}
+            >
+              {info.title}: {info.description}
+            </Row>
+          );
+        })}
       </Row>
     </Container>
   );

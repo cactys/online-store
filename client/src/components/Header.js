@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavLink, Row } from 'react-bootstrap';
+import { Container, Nav, Navbar, NavLink } from 'react-bootstrap';
 import { ADMIN_ROUTE, BASKET_ROUTE, SHOP_ROUTE } from '../utils/consts';
 
 const Header = () => {
