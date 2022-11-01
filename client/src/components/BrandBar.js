@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { observer } from 'mobx-react-lite';
-import { Card, Row } from 'react-bootstrap';
+import { Card, ListGroup, Row, Stack } from 'react-bootstrap';
 import { Context } from '..';
 
 const BrandBar = observer(() => {
